@@ -1,18 +1,31 @@
-const tkInfo={
-  name:"TaeKyung",
-  age:23,
-  gender:"Male",
-  favMovies: ["Along the gods","LOTR","Oldboy"],
-  favFood: [
-    {
-      name:"Kimchi",
-      fatty:false
-    },
-    {
-      name:"cheese burger",
-      fatty:true
-    }
-  ]
+const calculator = {
+  plus: function(a,b)
+  {
+    return a+b;
+  },
+  minus: function(a,b)
+  {
+    return a-b;
+  },
+  multiply: function(a,b)
+  {
+    return a*b;
+  },
+  divide: function(a,b)
+  {
+    return a/b;
+  },
+  pow: function(a,b)
+  {
+    return a**b;
+  }
 }
-// inside const changing is posible but const 자체 바꾸기는 안됨
-console.log(tkInfo);
+
+const a = calculator.plus(4,5);
+const b = calculator.minus(4,3);
+const c = calculator.multiply(4,3);
+const d = calculator.divide(4,3);
+const e = calculator.pow(4,3);
+
+
+console.log(a,b,c,d,e);
